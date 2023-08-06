@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 700px) {
+    .container{
+        width: 90%;
+    }
+    .post-table{
+        display: flex;   
+    }
+    .post-table thead{
+        display: none;
+    }
+    .post-table tbody{
+        width: 100%;
+    }
+    .post-table tbody tr{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    .post-table tbody tr td{
+        width: inherit;
+        max-width: 100%;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .post-table tbody tr td button{
+        width: 100%;
+    }
+}
